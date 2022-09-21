@@ -13,7 +13,7 @@ var cursos = [
     }
 ];
 
-const getCursos = (filtro) => {
+const getCurso = (filtro) => {
     const sigla = filtro.toUpperCase()
     let xRetorno = null
     let dadosCurso = []
@@ -35,7 +35,5 @@ const getCursos = (filtro) => {
 }
 
 module.exports = {
-    getCursos
+    getCurso
 }
-
-console.log(getCursos('kjh'))

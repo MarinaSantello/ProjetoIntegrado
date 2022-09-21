@@ -1,5 +1,3 @@
-const e = require("cors");
-
 var alunos = [
      
     {       
@@ -698,9 +696,10 @@ const getAlunosCurso = (filtro) => {
             if(item.sigla.includes(sigla)) {
                 listaAlunos.push(
                     {
-                        nome  : element.nome,
-                        icone : element.foto,
-                        status: element.status
+                        nome     : element.nome,
+                        icone    : element.foto,
+                        status   : element.status,
+                        matricula: element.matricula
                     }
                 )
                 xRetorno = listaAlunos
@@ -765,8 +764,9 @@ const getDiciplinaAluno = (filtro) => {
 
 module.exports = {
     getAlunosCurso,
-    getAlunosAno
+    getAlunosAno,
+    getDiciplinaAluno
 }
 
 
-console.log(getDiciplinaAluno(20151001024))
+//console.log(getDiciplinaAluno(20151001001))
