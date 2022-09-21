@@ -1,0 +1,68 @@
+main {
+    flex-grow: 2;
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 10%;
+    padding-top: 8%;
+    padding-right: 10%;
+    padding-bottom: 8%;
+    justify-content: space-between;
+}
+
+.message-text {
+    display: flex;
+    gap: 15px;
+    color: black;
+    font-weight: lighter;
+    font-size: 6rem;
+}
+
+.detail {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+}
+
+.vetor-devices {
+    width: 20vw;
+}
+
+.img-studant {
+    /* width: 30vw; */
+    display: flex;
+    align-items: center;
+    /* padding-left: 30px; */
+}
+
+.vetor-studant {
+    height: 45vh;
+}
+
+.card-container {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 30rem;
+    height: 15rem;
+    box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
+}
+
+.sigla {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.card-cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}

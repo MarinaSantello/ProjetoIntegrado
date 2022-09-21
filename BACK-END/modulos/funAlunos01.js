@@ -1,5 +1,3 @@
-const e = require("cors");
-
 var alunos = [
      
     {       
@@ -698,10 +696,9 @@ const getAlunosCurso = (filtro) => {
             if(item.sigla.includes(sigla)) {
                 listaAlunos.push(
                     {
-                        nome     : element.nome,
-                        icone    : element.foto,
-                        status   : element.status,
-                        matricula: element.matricula
+                        nome  : element.nome,
+                        icone : element.foto,
+                        status: element.status
                     }
                 )
                 xRetorno = listaAlunos
@@ -738,6 +735,8 @@ const getDiciplinaAluno = (filtro) => {
     const matricula = filtro
     let xRetorno = null
     let infoAluno = []
+    let infoDiciplina = []
+    let infoAlunoJSON = {}
 
     alunos.forEach(element => {
         if (element.matricula.includes(matricula)) {
@@ -749,15 +748,18 @@ const getDiciplinaAluno = (filtro) => {
             )
             
             element.curso[0].disciplinas.forEach(item => {
-                infoAluno.push(
+                infoDiciplina.push(
                     {
                         disciplina: item.nome,
                         media     : item.media,
                         status    : item.status
                     }
                 )
-                xRetorno = infoAluno
             });
+            infoAlunoJSON.aluno = infoAluno
+            infoAlunoJSON.disciplina = infoDiciplina
+
+            xRetorno = infoAlunoJSON
         }
     });
 
@@ -788,9 +790,8 @@ const getAlunosStatus = (filtro) => {
 module.exports = {
     getAlunosCurso,
     getAlunosAno,
-    getDiciplinaAluno,
     getAlunosStatus
 }
 
 
-//console.log(getDiciplinaAluno(20151001001))
+console.log(getDiciplinaAluno('20151001001'))
