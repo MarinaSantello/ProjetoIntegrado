@@ -1,18 +1,23 @@
 'use strict'
 
-import { usandoAPI } from "./modulos/APIcurso.js"
+import { apiCursos } from "./modulos/rotasAPI.js"
 
-console.log(usandoAPI())
+import { changeScreen, e_teste } from "./modulos/changePage.js"
 
-let api = usandoAPI()
+let api = apiCursos()
 
 const showCursos = async(array) => {
+    console.log(1)
     const cursos = await array
+    console.log(2)
     const cardCursos = document.getElementById('card-cursos')
 
     for (let i = 0 ; i < cursos.length ; i ++) {
         let cardContainer = document.createElement('button')
         cardContainer.classList.add('card-container')
+        cardContainer.id = `card-container${i}`
+
+        // cardContainer.addEventListener('click', changeScreen('rdc'))
 
         let icon = document.createElement('img')
         icon.classList.add('vetor-curso')
@@ -26,9 +31,12 @@ const showCursos = async(array) => {
         cardContainer.appendChild(sigla)
 
         cardCursos.appendChild(cardContainer)
+
+        //cardContainer.addEventListener('click', e_teste('xxx'))
+        console.log(cardContainer.id);
+        document.getElementById(cardContainer.id).onclick = `${e_teste('xxx')}`;
     }
 
 }
-
 
 showCursos(api)

@@ -4,9 +4,9 @@
     --details-color: #BCC2E5;
     --statusF-color: #E5B657;
     --statusC-color: #3347B0;
-    --aprovade-color: #3347B0;
-    --exame-color: #E5B657;
-    --reprovade-color: #C11010;
+    --aprov: #3347B0;
+    --exame: #E5B657;
+    --reprov: #C11010;
     --text-color: #FFF;
 }
 
