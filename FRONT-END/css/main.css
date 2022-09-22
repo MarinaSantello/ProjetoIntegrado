@@ -6,6 +6,12 @@ main {
     padding-top: 8%;
     padding-right: 10%;
     padding-bottom: 8%;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    gap: 30px;
     justify-content: space-between;
 }
 
@@ -22,15 +28,10 @@ main {
     color: var(--main-color);
 }
 
-.home {
-    display: flex;
-}
-
 .home-container {
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .vetor-devices {
@@ -82,9 +83,33 @@ main {
     width: 30.5rem;
 }
 
+.info-bar {
+    display: flex;
+    background-color: aqua;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.status {
+    display: flex;
+    flex-direction: column;
+}
 
-/* TESTE */
-.nome-studant {
-    background-color: var(--statusC-color);
+.legenda {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.colorC {
+    height: 15px;
+    width: 15px;
+    background-color: brown;
+}
+
+.colorF {
+    height: 15px;
+    width: 15px;
+    background-color: brown;
 }

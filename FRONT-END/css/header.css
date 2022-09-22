@@ -1,6 +1,18 @@
 header {
     display: flex;
+    flex-direction: column;
     background-color: var(--main-color);
+}
+
+#header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header-main {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;

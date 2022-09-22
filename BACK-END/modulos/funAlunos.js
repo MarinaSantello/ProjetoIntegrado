@@ -711,6 +711,55 @@ const getAlunosCurso = (filtro) => {
     return xRetorno
 }
 
+const getAlunos = (filtroSigla, anoConclusao,filtroStatus) => {
+    const sigla = filtroSigla.toUpperCase()
+    const ano = anoConclusao
+    const status = filtroStatus.toUpperCase()
+    let xRetorno = null
+    let listaAlunos = []
+    
+    alunos.forEach(element => {
+        element.curso.forEach(item => {
+            if(item.sigla.includes(sigla) && item.conclusao.includes(ano) && element.status.toUpperCase().includes(status)) {
+                listaAlunos.push(
+                    {
+                        nome     : element.nome,
+                        icone    : element.foto,
+                        status   : element.status,
+                        matricula: element.matricula
+                    }
+                )
+                xRetorno = listaAlunos
+            }
+        })
+    })
+    return xRetorno
+}
+
+const getAlunosCursoStatus = (filtroSigla, filtroStatus) => {
+    const sigla = filtroSigla.toUpperCase()
+    const status = filtroStatus.toUpperCase()
+    let xRetorno = null
+    let listaAlunos = []
+    
+    alunos.forEach(element => {
+        element.curso.forEach(item => {
+            if(item.sigla.includes(sigla) && element.status.toUpperCase().includes(status)) {
+                listaAlunos.push(
+                    {
+                        nome     : element.nome,
+                        icone    : element.foto,
+                        status   : element.status,
+                        matricula: element.matricula
+                    }
+                )
+                xRetorno = listaAlunos
+            }
+        })
+    })
+    return xRetorno
+}
+
 const getAlunosAno = (filtro) => {
     const ano = filtro
     let xRetorno = null
@@ -731,6 +780,27 @@ const getAlunosAno = (filtro) => {
         });
     });
     
+    return xRetorno
+}
+
+const getAlunosStatus = (filtro) => {
+    const status = filtro.toUpperCase()
+    let xRetorno = null
+    let listaAlunos = []
+
+    alunos.forEach(element => {
+        if (element.status.toUpperCase().includes(status)){
+            listaAlunos.push(
+                {
+                    nome  : element.nome,
+                    icone : element.foto,
+                    status: element.status
+                }
+            )
+            xRetorno = listaAlunos
+        }
+    });
+
     return xRetorno
 }
 
@@ -764,32 +834,13 @@ const getDiciplinaAluno = (filtro) => {
     return xRetorno
 }
 
-const getAlunosStatus = (filtro) => {
-    const status = filtro.toUpperCase()
-    let xRetorno = null
-    let listaAlunos = []
-
-    alunos.forEach(element => {
-        if (element.status.toUpperCase().includes(status)){
-            listaAlunos.push(
-                {
-                    nome  : element.nome,
-                    icone : element.foto,
-                    status: element.status
-                }
-            )
-            xRetorno = listaAlunos
-        }
-    });
-
-    return xRetorno
-}
-
 module.exports = {
     getAlunosCurso,
+    getAlunos,
     getAlunosAno,
     getDiciplinaAluno,
-    getAlunosStatus
+    getAlunosStatus,
+    getAlunosCursoStatus
 }
 
 

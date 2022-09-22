@@ -1,8 +1,8 @@
 'use strict'
 
-import { apiAlunosCurso } from "./rotasAPI.js"
+import { apiAlunosCurso, apiAlunosCursoStatus } from "./rotasAPI.js"
 
-const infoCards = async(array) => {
+const infoCardsCurso = async(array) => {
     const alunos = await array
     const main = document.getElementById('main')
 
@@ -39,17 +39,6 @@ const infoCards = async(array) => {
 
 // infoCards(apiAlunosCurso('rdc'))
 
-
-const teste = () => { 
-    const text = document.getElementById('home-container')
-    text.style.display = none
-}
-
-const button1 = document.getElementById('card-container0')
-
-button1.addEventListener('click', teste)
-
 export {
-    infoCards,
-    teste
+    infoCardsCurso
 }

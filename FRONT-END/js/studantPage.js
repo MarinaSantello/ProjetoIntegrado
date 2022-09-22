@@ -1,8 +1,10 @@
 'use strict'
 
-import { apiAlunosCurso } from "./rotasAPI.js"
+import { apiAlunos, apiAlunosCursoStatus, apiAlunosCurso } from "./modulos/rotasAPI.js"
 
-const infoCards = async(array) => {
+const alunosGeral = apiAlunosCurso('ds')
+
+const changeScreen = async(array) => {
     const alunos = await array
     const main = document.getElementById('main')
 
@@ -24,17 +26,22 @@ const infoCards = async(array) => {
         main.appendChild(cardPerson)
     }
 }
-// const changeScreenDS = (filtro) => { 
-function changeScreen(filtro) {
-    const curso = filtro
-    const home = document.getElementById('home')
-    home.style.display = "none"
 
-    // console.log(curso)
-    infoCards(apiAlunosCurso('ds'))
-    // infoCards(apiAlunosCurso(curso))
+const select = () => {
+    changeScreen(alunosGeral)
 }
 
-export {
-    changeScreen
+const cases = () => {
+    const status = document.querySelector('.option').value
+
+    switch (status) {
+        case 'cursando' :
+        select()
+
+    }
 }
+
+cases()
+// document.getElementById('status-option').addEventListener('change', select);
+
+// console.log(changeScreen(alunosGeral))
