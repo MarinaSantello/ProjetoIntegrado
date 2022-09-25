@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,50 +15,34 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/home.js" defer type="module"></script>
+    <link rel="stylesheet" href="../css/diciplinas.css">
+    <script src="../js/diciplinaPage.js" defer type="module"></script>
     <title>Lion School</title>
 </head>
-
 <body>
-    <header id="header">
-        <div class="logo">
-            <img src="../imgs/logo-image.svg" alt="logo da escola">
-            <span class="nome-logo">
-                Lion School
-            </span>
-        </div>
+    
+    <header>
+        <div class="header-main">
+            <div class="logo">
+                <img src="../imgs/logo-image.svg" alt="logo da escola">
+                <span class="nome-logo">
+                    Lion School
+                </span>
+            </div>
 
-        <div class="exit">
-            <i class="fa-solid fa-share-from-square"></i>
-            <span class="textExit">
-                Sair
-            </apan>
+            <div class="exit">
+                <a id="back" class="exit">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <span class="textExit">
+                        Voltar
+                    </span>
+                </a>
+            </div>
         </div>
     </header>
 
     <main id="main">
-        <div class="home" id="home">
-            <div class="home-container" id="home-container">
-                <div class="message-home">
-                    <span class="message-text">
-                        Escolha um <div class="detail"> curso </div>
-                    </span>
-                    <span class="message-text">
-                        para gerenciar
-                    </span>
-                </div>
-
-                <div class="img-devices">
-                    <img src="../imgs/devices.svg" alt="" class="vetor-devices">
-                </div>
-            </div>
-
-            <div class="img-studant">
-                <img src="../imgs/studant.svg" alt="" class="vetor-studant">
-            </div>
-
-            <div class="card-cursos" id="card-cursos"></div>
-        </div>
+        
     </main>
 
     <footer>
@@ -100,5 +83,4 @@
         </ul>
     </footer>
 </body>
-
 </html>

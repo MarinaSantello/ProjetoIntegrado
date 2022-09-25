@@ -7,6 +7,7 @@ main {
     padding-right: 10%;
     padding-bottom: 8%;
     justify-content: center;
+    background-color: tomato;
 }
 
 .home {
@@ -59,7 +60,7 @@ main {
     height: 15rem;
     color: var(--text-color);
     border-radius: 10px;
-    /* border: none; */
+    border: none;
     transition: .5s;
 }
 
@@ -85,10 +86,11 @@ main {
 
 .info-bar {
     display: flex;
-    background-color: aqua;
+    background-color: var(--status-bar);
     height: 50px;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
 }
 
 .status {

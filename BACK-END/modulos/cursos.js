@@ -7,13 +7,15 @@
 var cursos = [
     {
         "nome"  :   "Técnico em Desenvolvimento de Sistemas",
+        "nome2" :   "DS",
         "sigla" :   "DS",
         "icone" :   "../imgs/vector-ds.svg",
         "carga" :   "1200",
     },
     {
         "nome"  :   "Técnico em Redes de Computadores",
-        "sigla" :   "REDES",
+        "nome2" :   "REDES",
+        "sigla" :   "RDC",
         "icone" :   "../imgs/vector-rdc.svg",
         "carga" :   "1200"
     }
@@ -26,9 +28,10 @@ const getCursos = () => {
     cursos.forEach(element => {
         dadosCurso.push(
             {
-                nome : element.nome,
-                sigla: element.sigla,
-                icone: element.icone
+                nome     : element.nome,
+                nomeCurto: element.nome2,
+                sigla    : element.sigla,
+                icone    : element.icone
             }
         )
         xRetorno = dadosCurso

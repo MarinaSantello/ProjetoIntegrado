@@ -1,6 +1,6 @@
 'use strict'
 
-import { apiAlunosCurso } from "./rotasAPI.js"
+import { apiAlunosCurso } from "./modulos/rotasAPI.js"
 
 const infoCards = async(array) => {
     const alunos = await array
@@ -25,14 +25,13 @@ const infoCards = async(array) => {
     }
 }
 
-function changeScreen(evento) {
-    const home = document.getElementById('home')
-    home.style.display = "none"
-    const textExit = document.querySelector('.textExit')
-    textExit.textContent = "Voltar"
+const changeScreen = (event) => {
+    // const home = getElementById('home')
+    // home.style.display = 'none';
+    
+    infoCards(apiAlunosCurso(event.target.id))
 
-    infoCards(apiAlunosCurso(evento.target.id))
-    console.log(evento.target.id)
+    
 }
 
 export {

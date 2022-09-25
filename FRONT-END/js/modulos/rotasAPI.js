@@ -34,7 +34,7 @@ const apiAlunos = async(filtroSigla, anoConclusao,filtroStatus) => {
 const apiAlunosCursoStatus = async(filtroSigla, filtroStatus) => {
     const sigla = filtroSigla.toUpperCase()
     const status = filtroStatus
-    const urlAPIalunosCursoStatus = `http://localhost:3030/alunosCursoStatus/?filtroSigla=${sigla}&filtroStatus=${filtroStatus}`
+    const urlAPIalunosCursoStatus = `http://localhost:3030/alunosCursoStatus/?filtroSigla=${sigla}&filtroStatus=${status}`
 
     const response = await fetch(urlAPIalunosCursoStatus)
     const listaAlunosCursoStatus = await response.json()
@@ -42,11 +42,20 @@ const apiAlunosCursoStatus = async(filtroSigla, filtroStatus) => {
     return listaAlunosCursoStatus
 }
 
+const apiDiciplinasAluno = async(filtro) => {
+    const matricula = filtro
+    const urlAPIdiciplinasAlunos = `http://localhost:3030/diciplinaAluno?filtro=${matricula}`
 
+    const response = await fetch(urlAPIdiciplinasAlunos)
+    const listaDiciplinasAluno = await response.json()
+
+    return listaDiciplinasAluno
+}
 
 export {
     apiCursos,
     apiAlunosCurso,
     apiAlunos,
-    apiAlunosCursoStatus
+    apiAlunosCursoStatus,
+    apiDiciplinasAluno
 }

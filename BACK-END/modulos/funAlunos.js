@@ -17,36 +17,42 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "80",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Redes",
+                            "sigla" :   "IR",
                             "carga" :   "75",
                             "media" :   "93",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Nuvem",
+                            "sigla" :   "IN",
                             "carga" :   "120",
                             "media" :   "68",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Hardware",
+                            "sigla" :   "HARE",
                             "carga" :   "75",
                             "media" :   "74",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Servições de Redes",
+                            "sigla" :   "SER",
                             "carga" :   "240",
                             "media" :   "85",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Cabeamento Estruturado",
+                            "sigla" :   "CAES",
                             "carga" :   "150",
                             "media" :   "59",
                             "status":   "Exame"
@@ -71,36 +77,42 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "52",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Introdução a Redes",
+                            "sigla" :   "IR",
                             "carga" :   "75",
                             "media" :   "87",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Nuvem",
+                            "sigla" :   "IN",
                             "carga" :   "120",
                             "media" :   "70",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Hardware",
+                            "sigla" :   "HARE",
                             "carga" :   "75",
                             "media" :   "54",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Servições de Redes",
+                            "sigla" :   "SER",
                             "carga" :   "240",
                             "media" :   "96",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Cabeamento Estruturado",
+                            "sigla" :   "CAES",
                             "carga" :   "150",
                             "media" :   "100",
                             "status":   "Aprovado"
@@ -125,36 +137,42 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "30",
                             "status":   "Reprovado"
                         },
                         {
                             "nome"  :   "Introdução a Redes",
+                            "sigla" :   "IR",
                             "carga" :   "75",
                             "media" :   "77",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Nuvem",
+                            "sigla" :   "IN",
                             "carga" :   "120",
                             "media" :   "50",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Hardware",
+                            "sigla" :   "HARE",
                             "carga" :   "75",
                             "media" :   "84",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Servições de Redes",
+                            "sigla" :   "SER",
                             "carga" :   "240",
                             "media" :   "96",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Cabeamento Estruturado",
+                            "sigla" :   "CAES",
                             "carga" :   "150",
                             "media" :   "100",
                             "status":   "Aprovado"
@@ -179,54 +197,63 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "86",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Redes",
+                            "sigla" :   "IR",
                             "carga" :   "75",
                             "media" :   "77",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Nuvem",
+                            "sigla" :   "IN",
                             "carga" :   "120",
                             "media" :   "70",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Hardware",
+                            "sigla" :   "HARE",
                             "carga" :   "75",
                             "media" :   "84",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Servições de Redes",
+                            "sigla" :   "SER",
                             "carga" :   "240",
                             "media" :   "96",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Cabeamento Estruturado",
+                            "sigla" :   "CAES",
                             "carga" :   "150",
                             "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Segurança da Informação",
+                            "sigla" :   "SI",
                             "carga" :   "300",
                             "media" :   "96",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Administração de Serviços",
+                            "sigla" :   "ADMS",
                             "carga" :   "240",
                             "media" :   "74",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Projetos",
+                            "sigla" :   "PJ",
                             "carga" :   "400",
                             "media" :   "89",
                             "status":   "Aprovado"
@@ -251,54 +278,63 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "77",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Redes",
+                            "sigla" :   "IR",
                             "carga" :   "75",
                             "media" :   "94",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Nuvem",
+                            "sigla" :   "IN",
                             "carga" :   "120",
                             "media" :   "82",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Hardware",
+                            "sigla" :   "HARE",
                             "carga" :   "75",
                             "media" :   "84",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Servições de Redes",
+                            "sigla" :   "SER",
                             "carga" :   "240",
                             "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Cabeamento Estruturado",
+                            "sigla" :   "CAES",
                             "carga" :   "150",
                             "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Segurança da Informação",
+                            "sigla" :   "SI",
                             "carga" :   "300",
                             "media" :   "96",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Administração de Serviços",
+                            "sigla" :   "ADMS",
                             "carga" :   "240",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Projetos",
+                            "sigla" :   "PJ",
                             "carga" :   "400",
                             "media" :   "99",
                             "status":   "Aprovado"
@@ -323,54 +359,63 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Redes",
+                            "sigla" :   "IR",
                             "carga" :   "75",
                             "media" :   "98",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Nuvem",
+                            "sigla" :   "IN",
                             "carga" :   "120",
                             "media" :   "87",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Hardware",
+                            "sigla" :   "HARE",
                             "carga" :   "75",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Servições de Redes",
+                            "sigla" :   "SER",
                             "carga" :   "240",
                             "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Cabeamento Estruturado",
+                            "sigla" :   "CAES",
                             "carga" :   "150",
                             "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Segurança da Informação",
+                            "sigla" :   "SI",
                             "carga" :   "300",
                             "media" :   "96",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Administração de Serviços",
+                            "sigla" :   "ADMS",
                             "carga" :   "240",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Projetos",
+                            "sigla" :   "PJ",
                             "carga" :   "400",
                             "media" :   "99",
                             "status":   "Aprovado"
@@ -395,54 +440,63 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Programação",
+                            "sigla" :   "IR",
                             "carga" :   "150",
                             "media" :   "98",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Linguagem de Marcação",
+                            "sigla" :   "LIMA",
                             "carga" :   "120",
                             "media" :   "87",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados",
+                            "sigla" :   "BD",
                             "carga" :   "75",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Programação Web Back End",
+                            "sigla" :   "PWBE",
                             "carga" :   "240",
                             "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Programação Web Front End",
+                            "sigla" :   "PWFE",
                             "carga" :   "150",
                             "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados II",
+                            "sigla" :   "BDII",
                             "carga" :   "300",
                             "media" :   "96",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Aplicações Móveis",
+                            "sigla" :   "APPM",
                             "carga" :   "240",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Projetos",
+                            "sigla" :   "PJ",
                             "carga" :   "400",
                             "media" :   "99",
                             "status":   "Aprovado"
@@ -467,54 +521,63 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "50",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Introdução a Programação",
+                            "sigla" :   "IR",
                             "carga" :   "150",
                             "media" :   "94",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Linguagem de Marcação",
+                            "sigla" :   "LIMA",
                             "carga" :   "120",
                             "media" :   "70",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados",
+                            "sigla" :   "BD",
                             "carga" :   "75",
                             "media" :   "30",
                             "status":   "Reprovado"
                         },
                         {
                             "nome"  :   "Programação Web Back End",
+                            "sigla" :   "PWBE",
                             "carga" :   "240",
                             "media" :   "50",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Programação Web Front End",
+                            "sigla" :   "PWFE",
                             "carga" :   "150",
                             "media" :   "70",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados II",
+                            "sigla" :   "BDII",
                             "carga" :   "300",
                             "media" :   "20",
                             "status":   "Reprovado"
                         },
                         {
                             "nome"  :   "Aplicações Móveis",
+                            "sigla" :   "APPM",
                             "carga" :   "240",
                             "media" :   "88",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Projetos",
+                            "sigla" :   "PJ",
                             "carga" :   "400",
                             "media" :   "50",
                             "status":   "Exame"
@@ -539,36 +602,42 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "70",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Programação",
+                            "sigla" :   "IP",
                             "carga" :   "150",
                             "media" :   "99",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Linguagem de Marcação",
+                            "sigla" :   "LIMA",
                             "carga" :   "120",
                             "media" :   "80",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados",
+                            "sigla" :   "BD",
                             "carga" :   "75",
                             "media" :   "90",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Programação Web Back End",
+                            "sigla" :   "PWBE",
                             "carga" :   "240",
                             "media" :   "64",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Programação Web Front End",
+                            "sigla" :   "PWFE",
                             "carga" :   "150",
                             "media" :   "70",
                             "status":   "Aprovado"
@@ -593,36 +662,42 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "80",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Introdução a Programação",
+                            "sigla" :   "IP",
                             "carga" :   "150",
                             "media" :   "90",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Linguagem de Marcação",
+                            "sigla" :   "LIMA",
                             "carga" :   "120",
                             "media" :   "95",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados",
+                            "sigla" :   "BD",
                             "carga" :   "75",
                             "media" :   "80",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Programação Web Back End",
+                            "sigla" :   "PWBE",
                             "carga" :   "240",
                             "media" :   "87",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Programação Web Front End",
+                            "sigla" :   "PWFE",
                             "carga" :   "150",
                             "media" :   "70",
                             "status":   "Aprovado"
@@ -647,36 +722,42 @@ var alunos = [
                     "disciplinas"   :   [
                         {
                             "nome"  :   "Sistemas Operacionais",
+                            "sigla" :   "SOP",
                             "carga" :   "75",
                             "media" :   "50",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Introdução a Programação",
+                            "sigla" :   "IP",
                             "carga" :   "150",
                             "media" :   "40",
                             "status":   "Reprovado"
                         },
                         {
                             "nome"  :   "Linguagem de Marcação",
+                            "sigla" :   "LIMA",
                             "carga" :   "120",
                             "media" :   "80",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados",
+                            "sigla" :   "BD",
                             "carga" :   "75",
                             "media" :   "60",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Programação Web Back End",
+                            "sigla" :   "PWBE",
                             "carga" :   "240",
                             "media" :   "90",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Programação Web Front End",
+                            "sigla" :   "PWFE",
                             "carga" :   "150",
                             "media" :   "80",
                             "status":   "Aprovado"
@@ -814,7 +895,8 @@ const getDiciplinaAluno = (filtro) => {
             infoAluno.push(
                 {
                     nomeAluno : element.nome,
-                    icone     : element.foto
+                    icone     : element.foto,
+                    curso     : element.curso[0].sigla
                 }
             )
             
@@ -822,6 +904,7 @@ const getDiciplinaAluno = (filtro) => {
                 infoAluno.push(
                     {
                         disciplina: item.nome,
+                        sigla     : item.sigla,
                         media     : item.media,
                         status    : item.status
                     }
