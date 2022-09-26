@@ -7,7 +7,6 @@ let matricula = xParametro.split('=')[1]
 
 const api = apiDiciplinasAluno(matricula)
 
-
 const back = async(array) => {
     const infoAluno = await array
 
@@ -54,25 +53,34 @@ const notasDiciplinas = async(array) => {
 
         const backgroundBar = document.createElement('div')
         backgroundBar.classList.add('background-bar')
-        backgroundBar.style.backgroundColor = '#a87'
         backgroundBar.style.height = '200px'
-        backgroundBar.style.width = '40px'
+        backgroundBar.style.width = '16px'
 
         const notaBar = document.createElement('div')
         notaBar.classList.add('nota-bar')
         notaBar.style.height = `${dataDiciplinas[i].media}%`
 
+        const colorAprov = getComputedStyle(document.documentElement).getPropertyValue('--aprov')
+        const colorExame = getComputedStyle(document.documentElement).getPropertyValue('--exame')
+        const colorReprov = getComputedStyle(document.documentElement).getPropertyValue('--reprov')
+
         switch (dataDiciplinas[i].status) {
             case 'Aprovado':
-                notaBar.style.backgroundColor = '#3347B0'
+                notaBar.style.backgroundColor = colorAprov
+                notaBar.style.boxShadow = `0px 0px 15px ${colorAprov}`
+                nota.style.color = colorAprov
                 break;
         
             case 'Exame':
-                notaBar.style.backgroundColor = '#E5B657'
+                notaBar.style.backgroundColor = colorExame
+                notaBar.style.boxShadow = `0px 0px 15px ${colorExame}`
+                nota.style.color = colorExame
                 break;
         
             case 'Reprovado':
-                notaBar.style.backgroundColor = '#C11010'                
+                notaBar.style.backgroundColor = colorReprov              
+                notaBar.style.boxShadow = `0px 0px 15px ${colorReprov}`
+                nota.style.color = colorReprov
                 break;
             
             default:

@@ -1,0 +1,98 @@
+.info-bar {
+    display: flex;
+    background-color: var(--status-bar);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.legenda {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.colorC {
+    height: 15px;
+    width: 15px;
+    background-color: var(--statusC-color);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+
+.colorF {
+    height: 15px;
+    width: 15px;
+    background-color: var(--statusF-color);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+
+.legenda-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#status-option {
+    background-color: var(--deatail-color);
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.status span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.card-person {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 10px;
+}
+
+.nome-curso {
+    color: var(--main-color);
+    font-size: 3.9rem;
+    font-weight: 500;
+}
+
+.icone {
+    width: 300px;
+    height: 300px;
+}
+
+.nome-studant {
+    text-align: center;
+    height: 50px;
+    width: 90%;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    display: flex;
+    gap: 60px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,36 +12,54 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/83b15db74c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/diciplinas.css">
-    <script src="../js/diciplinaPage.js" defer type="module"></script>
+    <link rel="stylesheet" href="./FRONT-END/css/style.css">
+    <link rel="stylesheet" href="./FRONT-END/css/header.css">
+    <link rel="stylesheet" href="./FRONT-END/css/footer.css">
+    <link rel="stylesheet" href="./FRONT-END/css/main.css">
+    <script src="./FRONT-END/js/home.js" defer type="module"></script>
     <title>Lion School</title>
 </head>
-<body>
-    
-    <header>
-        <div class="header-main">
-            <div class="logo">
-                <img src="../imgs/logo-image.svg" alt="logo da escola">
-                <span class="nome-logo">
-                    Lion School
-                </span>
-            </div>
 
-            <a id="back" class="exit">
-                <i class="fa-solid fa-share-from-square"></i>
-                <span class="textExit">
-                    Voltar
-                </apan>
-            </a>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="./FRONT-END/imgs/logo-image.svg" alt="logo da escola">
+            <span class="nome-logo">
+                Lion School
+            </span>
         </div>
+
+        <a href="#" class="exit">
+            <i class="fa-solid fa-share-from-square"></i>
+            <span class="textExit">
+                Sair
+            </apan>
+        </a>
     </header>
 
     <main id="main">
-        
+        <div class="home" id="home">
+            <div class="home-container" id="home-container">
+                <div class="message-home">
+                    <span class="message-text">
+                        Escolha um <div class="detail"> curso </div>
+                    </span>
+                    <span class="message-text">
+                        para gerenciar
+                    </span>
+                </div>
+
+                <div class="img-devices">
+                    <img src="./FRONT-END/imgs/devices.svg" alt="" class="vetor-devices">
+                </div>
+            </div>
+
+            <div class="img-studant">
+                <img src="./FRONT-END/imgs/studant.svg" alt="" class="vetor-studant">
+            </div>
+
+            <div class="card-cursos" id="card-cursos"></div>
+        </div>
     </main>
 
     <footer>
@@ -81,4 +100,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

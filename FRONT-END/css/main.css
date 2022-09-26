@@ -7,7 +7,7 @@ main {
     padding-right: 10%;
     padding-bottom: 8%;
     justify-content: center;
-    background-color: tomato;
+    background-color: var(--bg-color);
 }
 
 .home {
@@ -82,36 +82,4 @@ main {
     justify-content: center;
     align-items: center;
     width: 30.5rem;
-}
-
-.info-bar {
-    display: flex;
-    background-color: var(--status-bar);
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-}
-
-.status {
-    display: flex;
-    flex-direction: column;
-}
-
-.legenda {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.colorC {
-    height: 15px;
-    width: 15px;
-    background-color: brown;
-}
-
-.colorF {
-    height: 15px;
-    width: 15px;
-    background-color: brown;
 }

@@ -9,15 +9,14 @@ const name = async(array, sigla) => {
     const cursos = await array
     const siglaCurso = sigla
 
-    const titulo = document.getElementsByClassName('titulo')
     const h1 = document.createElement('h1')
+    h1.classList.add('nome-curso')
 
     cursos.forEach(element => {
         if(element.sigla.includes(siglaCurso)) {
             h1.textContent = element.nome
-            console.log(element.nome)
         }
-    });
+    })
 
     main.appendChild(h1)
 
@@ -27,8 +26,12 @@ const infoCards = async(array) => {
     const alunos = await array
     const main = document.getElementById('main')
 
-    await name(apiCursos(), sigla01)
+    const cardContainer = document.createElement('div')
+    cardContainer.classList.add('cards-container')
 
+    main.textContent = ''
+
+    await name(apiCursos(), sigla01)
 
     for (let i = 0; i < alunos.length; i++) {
         const cardPerson = document.createElement('a')
@@ -44,10 +47,8 @@ const infoCards = async(array) => {
         icone.classList.add('icone')
         icone.src = `${alunos[i].icone}`
 
-        cardPerson.appendChild(nome)
         cardPerson.appendChild(icone)
-
-        main.appendChild(cardPerson)
+        cardPerson.appendChild(nome)
 
         const colorCursando = getComputedStyle(document.documentElement).getPropertyValue('--statusC-color')
         const colorFinalizado = getComputedStyle(document.documentElement).getPropertyValue('--statusF-color')
@@ -57,14 +58,13 @@ const infoCards = async(array) => {
         } 
         else {
             cardPerson.style.backgroundColor = colorFinalizado
+
         }
         
+        cardContainer.appendChild(cardPerson)
     }
 
-    console.log(3)
-    console.log(main)
-
-
+    main.appendChild(cardContainer)
 }
 
 const createCards = () => {
