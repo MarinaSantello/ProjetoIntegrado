@@ -1,4 +1,5 @@
 header {
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
@@ -39,4 +40,34 @@ header {
 .exit-img {
     width: 48px;
     height: 42.67px;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 85px;
+    }
+
+    #header-SP {
+        height: auto;
+    }
+
+    .logo {
+        margin-left: 34px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .nome-logo {
+        font-size: 1.5rem;
+    }
+
+    .nome-curso {
+        font-size: 10rem;
+    }
+
+    .exit {
+        display: none;
+    }
 }

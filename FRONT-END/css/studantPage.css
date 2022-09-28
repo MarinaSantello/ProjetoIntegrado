@@ -96,3 +96,61 @@
     align-items: center;
     height: 100vh;
 }
+
+@media (max-width: 768px) {
+    #main {
+        height: auto;
+        align-items: center;
+    }
+
+    .info-bar {
+        padding: 24px;
+        height: 70px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .nome-curso {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .card-person {
+        height: 220px;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+    }
+
+    .icone {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nome-studant {
+        font-size: medium;
+        height: auto;
+    }
+
+    .legenda {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .colorC,
+    .colorF {
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px;
+    }
+
+    .text-legenda {
+        font-size: .8rem;
+    }
+
+    .titulo-legenda {
+        display: none;
+    }
+}

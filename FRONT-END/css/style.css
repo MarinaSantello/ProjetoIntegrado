@@ -33,3 +33,10 @@ body {
     color: var(--text-color);
     height: 100vh;
 }
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+}

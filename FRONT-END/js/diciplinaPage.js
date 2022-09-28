@@ -54,7 +54,6 @@ const notasDiciplinas = async(array) => {
         const backgroundBar = document.createElement('div')
         backgroundBar.classList.add('background-bar')
         backgroundBar.style.height = '200px'
-        backgroundBar.style.width = '16px'
 
         const notaBar = document.createElement('div')
         notaBar.classList.add('nota-bar')
