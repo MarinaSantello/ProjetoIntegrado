@@ -9,7 +9,8 @@
     font-weight: 500;
 }
 
-.status {
+.status,
+.ano-conclusao {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -41,8 +42,9 @@
     align-items: center;
 }
 
-#status-option {
-    background-color: var(--deatail-color);
+#status-option,
+#ano-option {
+    background-color: transparent;
     color: #fff;
     border: solid 1px #fff;
     border-radius: 5px;
@@ -63,6 +65,7 @@
     justify-content: center;
     gap: 20px;
     box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .nome-curso {

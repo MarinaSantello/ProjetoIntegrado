@@ -1,6 +1,6 @@
 'use strict'
 
-import { apiCursos, apiAlunosCurso, apiAlunosCursoStatus } from "./modulos/rotasAPI.js"
+import { apiCursos, apiAlunosCurso, apiAlunosCursoStatus, apiAlunosCursoConclusao, apiAlunos } from "./modulos/rotasAPI.js"
 
 let xParametro01 = window.location.search.substring(1);
 let sigla01 = xParametro01.split('=')[1]
@@ -81,7 +81,33 @@ const createCardsStatus = (status) => {
     infoCards(apiAlunosCursoStatus(sigla, status))
 }
 
-const cases = () => {
+const createCardsAno = (ano) => {
+    let xParametro = window.location.search.substring(1);
+    let sigla = xParametro.split('=')[1]
+
+    infoCards(apiAlunosCursoConclusao(sigla, ano))
+
+    console.log(apiAlunosCursoConclusao(sigla, ano))
+}
+
+const createCardsAnoStatus = (ano, status) => {
+    let xParametro = window.location.search.substring(1);
+    let sigla = xParametro.split('=')[1]
+
+    infoCards(apiAlunos(sigla, ano, status))
+}
+
+// const cases = () => {
+//     const status = document.getElementById('status-option').value
+//     const ano = document.getElementById('ano-option').value
+
+//     if (status == 'status' && ano == 'all') {
+//         createCards()
+//     } else if (status == '') {}
+
+// }
+
+const casesStatus = () => {
     const status = document.getElementById('status-option').value
 
     switch (status) {
@@ -103,6 +129,51 @@ const cases = () => {
     }
 }
 
+const casesAno = () => {
+    const ano = document.getElementById('ano-option').value
+
+    switch (ano) {
+        case 'all' :
+            createCards()
+            break
+
+        case '2018' :
+            createCardsAno(ano)
+            console.log(ano)
+            break
+
+        case '2019' :
+            createCardsAno(ano)
+            break;
+
+        case '2020' :
+            createCardsAno(ano)
+            break;
+
+        case '2021' :
+            createCardsAno(ano)
+            break;
+
+        case '2022' :
+            createCardsAno(ano)
+            break;
+
+        case '2023' :
+            createCardsAno(ano)
+            break;
+
+        case '2024' :
+            createCardsAno(ano)
+            break;
+
+        default :
+            createCards()
+            break
+    }
+}
+
 createCards()
 
-document.getElementById('status-option').addEventListener('change', cases)
+document.getElementById('status-option').addEventListener('change', casesStatus)
+
+document.getElementById('ano-option').addEventListener('change', casesAno)

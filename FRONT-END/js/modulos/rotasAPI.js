@@ -42,9 +42,9 @@ const apiAlunosCursoStatus = async(filtroSigla, filtroStatus) => {
     return listaAlunosCursoStatus
 }
 
-const apiAlunosCursoConclusao = async(anoConclusao, filtroSigla) => {
-    const ano = filtroAno
+const apiAlunosCursoConclusao = async(filtroSigla, anoConclusao) => {
     const sigla = filtroSigla.toUpperCase()
+    const ano = anoConclusao
     const urlAPIalunosCursoConclusao = `http://localhost:3030/alunosConclusao/?filtroAno=${ano}&filtroCurso=${sigla}`
 
     const response = await fetch(urlAPIalunosCursoConclusao)
