@@ -42,6 +42,17 @@ const apiAlunosCursoStatus = async(filtroSigla, filtroStatus) => {
     return listaAlunosCursoStatus
 }
 
+const apiAlunosCursoConclusao = async(anoConclusao, filtroSigla) => {
+    const ano = filtroAno
+    const sigla = filtroSigla.toUpperCase()
+    const urlAPIalunosCursoConclusao = `http://localhost:3030/alunosConclusao/?filtroAno=${ano}&filtroCurso=${sigla}`
+
+    const response = await fetch(urlAPIalunosCursoConclusao)
+    const listaAlunosCursoConclusao = await response.json()
+
+    return listaAlunosCursoConclusao
+}
+
 const apiDiciplinasAluno = async(filtro) => {
     const matricula = filtro
     const urlAPIdiciplinasAlunos = `http://localhost:3030/diciplinaAluno?filtro=${matricula}`
@@ -56,6 +67,7 @@ export {
     apiCursos,
     apiAlunosCurso,
     apiAlunos,
+    apiAlunosCursoConclusao,
     apiAlunosCursoStatus,
     apiDiciplinasAluno
 }

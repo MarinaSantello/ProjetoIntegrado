@@ -841,14 +841,15 @@ const getAlunosCursoStatus = (filtroSigla, filtroStatus) => {
     return xRetorno
 }
 
-const getAlunosAno = (filtro) => {
-    const ano = filtro
+const getAlunosAnoCurso = (filtroAno, filtroCurso) => {
+    const ano = filtroAno
+    const curso = filtroCurso.toUpperCase()
     let xRetorno = null
     let listaAlunos = []
 
     alunos.forEach(element => {
         element.curso.forEach(item => {
-            if(item.conclusao.includes(ano)) {
+            if(item.conclusao.includes(ano) && item.sigla.includes(curso)) {
                 listaAlunos.push(
                     {
                         nome  : element.nome,
@@ -920,11 +921,11 @@ const getDiciplinaAluno = (filtro) => {
 module.exports = {
     getAlunosCurso,
     getAlunos,
-    getAlunosAno,
+    getAlunosAnoCurso,
     getDiciplinaAluno,
     getAlunosStatus,
     getAlunosCursoStatus
 }
 
 
-//console.log(getDiciplinaAluno(20151001001))
+// console.log(getAlunosAnoCurso(2022, 'rdc'))

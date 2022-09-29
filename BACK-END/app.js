@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const app = express()
 
 const { getCursos } = require('./modulos/cursos')
-const { getAlunosCurso, getAlunosAno, getDiciplinaAluno, getAlunos, getAlunosCursoStatus } = require('./modulos/funAlunos')
+const { getAlunosCurso, getAlunosAnoCurso, getDiciplinaAluno, getAlunos, getAlunosCursoStatus } = require('./modulos/funAlunos')
 const { response, request } = require('express')
 
 app.use((request, response, next) => {
@@ -71,8 +71,9 @@ app.get('/alunosCursoStatus/', cors(), async(request, response, next) => {
 
 
 app.get('/alunosConclusao/', cors(), async(request, response, next) => {
-    const ano = request.query.filtro
-    let alunos = getAlunosAno(ano)
+    const ano = request.query.filtroAno
+    const curso = request.query.filtroCurso
+    let alunos = getAlunosAnoCurso(ano, curso)
 
     if (alunos == null) {
         response.status(404)
